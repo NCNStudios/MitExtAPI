@@ -1,0 +1,35 @@
+{
+    "name": "MitExt",
+    "version": "1.0.0",
+    "description": "From MitThui2K5 With Love ❤",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "webNavigation",
+        "storage",
+        "scripting",
+        "contextMenus",
+        "tabs"
+    ],
+    "icons": {
+        "16": "./assets/img/icon.png",
+        "48": "./assets/img/icon.png",
+        "128": "./assets/img/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "./assets/img/icon.png"
+    },
+    "options_ui": {
+        "page": "fast-add.html",
+        "open_in_tab": true
+    },
+    "web_accessible_resources": [{
+        "resources": ["fast-add.html"],
+        "matches": ["<all_urls>"]
+    }]
+}
